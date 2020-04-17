@@ -37,7 +37,7 @@ Text
    ```
 
 1. Item
-   1. Item
+   1. Item {MD008}
 
       ```text
       fence
@@ -52,7 +52,7 @@ Text
    fence {MD031:51} {MD031:53}
    ```
 1. Item
-   1. Item
+   1. Item {MD008}
       ```text
       fence {MD031:56} {MD031:58}
       ```

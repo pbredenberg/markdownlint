@@ -25,7 +25,7 @@ Text
 Text
 
 > 1. Item
->    1. Item
+>    1. Item {MD008}
 
 Text
 
@@ -56,8 +56,8 @@ Text
 Text
 
    > 1. Item
-   >    1. Item
-   >    1.  Item {MD030}
+   >    1. Item {MD008}
+   >    1.  Item {MD030} {MD008}
 
 Text
 

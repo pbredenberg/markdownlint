@@ -320,6 +320,33 @@ issue for multi-markdown parsers, which require a 4-space indents. More informat
 <https://cirosantilli.com/markdown-style-guide#indentation-of-content-inside-lists>
 and <http://support.markedapp.com/discussions/problems/21-sub-lists-not-indenting>.
 
+<a name="md008"></a>
+
+## MD008 - Ordered list indentation
+
+Tags: ol, indentation
+
+Aliases: ol-indent
+
+Parameters: indent, start_indented (number; default 2, boolean; default false)
+
+This rule is triggered when list items are not indented by the configured
+number of spaces (default: 2).
+
+Example:
+
+```markdown
+1. List item
+   2. Nested list item indented by 3 spaces
+```
+
+Corrected Example:
+
+```markdown
+1. List item
+2. Nested list item indented by 2 spaces
+```
+
 <a name="md009"></a>
 
 ## MD009 - Trailing spaces

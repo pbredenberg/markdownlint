@@ -85,4 +85,7 @@ markdownLint {MD044}
 ![](image.jpg) {MD045}
 ## Heading 10 {MD022}
 
+1. list
+ 1. list {MD005} {MD008}
+
 EOF {MD047}

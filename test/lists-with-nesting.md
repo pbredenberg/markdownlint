@@ -15,7 +15,7 @@
 ## Insufficient nesting
 
 - one {MD032}
- 1. two {MD032}
+ 1. two {MD032} {MD008}
 - three {MD032}
 
 1. one {MD032}
@@ -33,12 +33,12 @@
       - seven
 
 1. one
-   1. two
-   1. three
+   1. two {MD008}
+   1. three {MD008}
 1. four
-   1. five
-      1. six
-         1. seven
+   1. five {MD008}
+      1. six {MD008}
+         1. seven {MD008}
 
 ## Correct nesting, different types
 
@@ -65,7 +65,7 @@
     1. three
 
 1. one
-   1. two
+   1. two {MD008}
       - three
 
 1. one

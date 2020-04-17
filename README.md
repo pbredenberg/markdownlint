@@ -55,6 +55,7 @@ playground for learning and exploring.
 * **[MD005](doc/Rules.md#md005)** *list-indent* - Inconsistent indentation for list items at the same level
 * ~~**[MD006](doc/Rules.md#md006)** *ul-start-left* - Consider starting bulleted lists at the beginning of the line~~
 * **[MD007](doc/Rules.md#md007)** *ul-indent* - Unordered list indentation
+* **[MD008](doc/Rules.md#md008)** *ol-indent* - Ordered list indentation
 * **[MD009](doc/Rules.md#md009)** *no-trailing-spaces* - Trailing spaces
 * **[MD010](doc/Rules.md#md010)** *no-hard-tabs* - Hard tabs
 * **[MD011](doc/Rules.md#md011)** *no-reversed-links* - Reversed link syntax
@@ -121,11 +122,11 @@ Tags group related rules and can be used to enable/disable multiple rules at onc
 * **hr** - MD035
 * **html** - MD033
 * **images** - MD045
-* **indentation** - MD005, MD006, MD007, MD027
+* **indentation** - MD005, MD006, MD007, MD008, MD027
 * **language** - MD040
 * **line_length** - MD013
 * **links** - MD011, MD034, MD039, MD042
-* **ol** - MD029, MD030, MD032
+* **ol** - MD008, MD029, MD030, MD032
 * **spaces** - MD018, MD019, MD020, MD021, MD023
 * **spelling** - MD044
 * **ul** - MD004, MD005, MD006, MD007, MD030, MD032

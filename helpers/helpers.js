@@ -269,8 +269,11 @@ module.exports.flattenLists = function flattenLists(params) {
       stack.push(current);
       current = {
         "unordered": (token.type === "bullet_list_open"),
+        "ordered": (token.type === "ordered_list_open"),
         "parentsUnordered": !current ||
           (current.unordered && current.parentsUnordered),
+        "parentsOrdered": !current ||
+          (current.ordered && current.parentsOrdered),
         "open": token,
         "indent": indentFor(token),
         "parentIndent": (current && current.indent) || 0,

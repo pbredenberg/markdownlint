@@ -1110,7 +1110,8 @@ tape("styleAll", (test) => {
         "MD001": [ 3 ],
         "MD003": [ 5, 31 ],
         "MD004": [ 8 ],
-        "MD005": [ 12 ],
+        "MD005": [ 12, 89 ],
+        "MD008": [ 89 ],
         "MD007": [ 8, 11 ],
         "MD009": [ 14 ],
         "MD010": [ 14 ],
@@ -1144,7 +1145,7 @@ tape("styleAll", (test) => {
         "MD042": [ 81 ],
         "MD045": [ 85 ],
         "MD046": [ 49, 73, 77 ],
-        "MD047": [ 88 ],
+        "MD047": [ 91 ],
         "MD048": [ 77 ]
       }
     };
@@ -1167,7 +1168,8 @@ tape("styleRelaxed", (test) => {
         "MD001": [ 3 ],
         "MD003": [ 5, 31 ],
         "MD004": [ 8 ],
-        "MD005": [ 12 ],
+        "MD005": [ 12, 89 ],
+        "MD008": [ 89 ],
         "MD011": [ 16 ],
         "MD014": [ 23 ],
         "MD018": [ 25 ],
@@ -1186,7 +1188,7 @@ tape("styleRelaxed", (test) => {
         "MD042": [ 81 ],
         "MD045": [ 85 ],
         "MD046": [ 49, 73, 77 ],
-        "MD047": [ 88 ],
+        "MD047": [ 91 ],
         "MD048": [ 77 ]
       }
     };
@@ -1431,7 +1433,7 @@ tape("missingStringValue", (test) => {
 });
 
 tape("readme", (test) => {
-  test.plan(115);
+  test.plan(117);
   const tagToRules = {};
   rules.forEach(function forRule(rule) {
     rule.tags.forEach(function forTag(tag) {
@@ -1500,7 +1502,7 @@ tape("readme", (test) => {
 });
 
 tape("doc", (test) => {
-  test.plan(336);
+  test.plan(344);
   fs.readFile("doc/Rules.md", helpers.utf8Encoding,
     (err, contents) => {
       test.ifError(err);
@@ -2784,7 +2786,7 @@ tape("configBadHybridSync", (test) => {
 });
 
 tape("allBuiltInRulesHaveValidUrl", (test) => {
-  test.plan(132);
+  test.plan(135);
   rules.forEach(function forRule(rule) {
     test.ok(rule.information);
     test.ok(Object.getPrototypeOf(rule.information) === URL.prototype);

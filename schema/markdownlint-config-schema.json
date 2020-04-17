@@ -260,6 +260,48 @@
       },
       "additionalProperties": false
     },
+    "MD008": {
+      "description": "MD008/ol-indent - Ordered list indentation",
+      "type": [
+        "boolean",
+        "object"
+      ],
+      "default": true,
+      "properties": {
+        "indent": {
+          "description": "Spaces for indent",
+          "type": "integer",
+          "default": 2
+        },
+        "start_indented": {
+          "description": "Whether to indent the first level of the list",
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "ol-indent": {
+      "description": "MD008/ol-indent - Ordered list indentation",
+      "type": [
+        "boolean",
+        "object"
+      ],
+      "default": true,
+      "properties": {
+        "indent": {
+          "description": "Spaces for indent",
+          "type": "integer",
+          "default": 2
+        },
+        "start_indented": {
+          "description": "Whether to indent the first level of the list",
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "additionalProperties": false
+    },
     "MD009": {
       "description": "MD009/no-trailing-spaces - Trailing spaces",
       "type": [
@@ -1447,7 +1489,12 @@
       "default": true
     },
     "indentation": {
-      "description": "indentation - MD005, MD006, MD007, MD027",
+      "description": "indentation - MD005, MD006, MD007, MD008, MD027",
+      "type": "boolean",
+      "default": true
+    },
+    "ol": {
+      "description": "ol - MD008, MD029, MD030, MD032",
       "type": "boolean",
       "default": true
     },
@@ -1498,11 +1545,6 @@
     },
     "blockquote": {
       "description": "blockquote - MD027, MD028",
-      "type": "boolean",
-      "default": true
-    },
-    "ol": {
-      "description": "ol - MD029, MD030, MD032",
       "type": "boolean",
       "default": true
     },

@@ -1,7 +1,7 @@
 1. item
-   1. item
+   1. item {MD008}
       + item
-   1. item
+   1. item {MD008}
       - item {MD004}
 
 - item
